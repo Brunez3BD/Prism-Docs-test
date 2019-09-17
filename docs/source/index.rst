@@ -11,6 +11,7 @@ Welcome to Prism's documentation!
    
    userguide
    installationguide
+   pinout
 
 
 
