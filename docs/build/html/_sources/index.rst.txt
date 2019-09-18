@@ -3,8 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Prism's documentation!
-=================================
+Prism's documentation!
+======================
+This is the documentation for Prism - the best EV charger
+
+*TODO add a short description*
 
 .. toctree::
    :maxdepth: 2
@@ -12,12 +15,4 @@ Welcome to Prism's documentation!
    userguide
    installationguide
    pinout
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   conn_diagram
