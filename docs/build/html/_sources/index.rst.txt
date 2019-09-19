@@ -12,7 +12,8 @@ This is the documentation for Prism - the best EV charger
 .. toctree::
    :maxdepth: 2
    
-   userguide
-   installationguide
+   user_guide
+   installation_guide
    pinout
    conn_diagram
+   err_codes

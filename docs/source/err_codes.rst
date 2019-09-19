@@ -1,0 +1,65 @@
+***********
+Color codes
+***********
+
+Prism leds are used to signal all differents mode of function and error codes. Here is all the possible color codes available.
+
+Button color
+============
+
+.. csv-table::
+   :widths: 1, 1, 1, 1, 1
+   
+   |btn green|, |btn red|, |btn yellow|, |btn purple|, |btn light blue|
+
+.. The following are all link to the button images
+
+.. |btn green| image:: _img/error_codes/btn_green.png
+   :target: `Button green`_
+
+.. |btn red| image:: _img/error_codes/btn_red.png
+   :target: `Button red`_
+
+.. |btn yellow| image:: _img/error_codes/btn_yellow.png
+   :target: `Button yellow`_
+
+.. |btn purple| image:: _img/error_codes/btn_purple.png
+   :target: `Button purple`_
+
+.. |btn light blue| image:: _img/error_codes/btn_light_blue.png
+   :target: `Button light blue`_
+
+
+
+Button green
+============
+
+.. csv-table::
+   :widths: 1, 2, 3
+
+   **Color**, **Name**, **Description**
+   |green1|, "EV charging:", "EV charging from the main power" 
+   |green2|, "Overtemperature", 
+   |green3|, ,
+
+.. link to images
+
+.. |green1| image:: _img/error_codes/charge.png
+
+.. |green2| image:: _img/error_codes/charging_overtemp.png
+
+.. |green3| image:: _img/error_codes/err_0x10.png
+
+
+
+Button red
+==========
+
+Button yellow
+=============
+
+Button purple
+=============
+
+Button light blue
+=================

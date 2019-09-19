@@ -19,8 +19,8 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'Prism'
-copyright = '2019, Mastro Gippo, Albeto Stecca, Michele Brunelli, Giovanni Giacobbi, Paolo Cargnin'
-author = 'Mastro Gippo, Albeto Stecca, Michele Brunelli, Giovanni Giacobbi, Paolo Cargnin'
+copyright = '2019, Cartender'
+author = 'Mastro Gippo, Michele Brunelli, Giovanni Giacobbi'
 
 # The full version, including alpha/beta/rc tags
 release = '0.0.1'
