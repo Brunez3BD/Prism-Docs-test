@@ -33,6 +33,7 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Connection Diagram" href="conn_diagram.html" /> 
@@ -85,12 +86,12 @@
 <li class="toctree-l1"><a class="reference internal" href="pinout.html">Pinout</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conn_diagram.html">Connection Diagram</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Color codes</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#button-color">Button color</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#button-green">Button green</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#button-red">Button red</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#button-yellow">Button yellow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#button-purple">Button purple</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#button-light-blue">Button light blue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#others">Others</a></li>
 </ul>
 </li>
 </ul>
@@ -160,8 +161,7 @@
   <div class="section" id="color-codes">
 <h1>Color codes<a class="headerlink" href="#color-codes" title="Permalink to this headline">¶</a></h1>
 <p>Prism leds are used to signal all differents mode of function and error codes. Here is all the possible color codes available.</p>
-<div class="section" id="button-color">
-<h2>Button color<a class="headerlink" href="#button-color" title="Permalink to this headline">¶</a></h2>
+<p>For simpler search thorugth all codes select first the button’s color:</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width: 20%" />
@@ -179,21 +179,191 @@
 </tr>
 </tbody>
 </table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>“Can’t find your color? Try <a class="reference internal" href="#others">this section</a> for other color codes”</p>
 </div>
 <div class="section" id="button-green">
 <h2>Button green<a class="headerlink" href="#button-green" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 33%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Color</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/charge.png"><img alt="green1" src="_images/charge.png" style="height: 250px;" /></a></p></td>
+<td><p>EV charging:</p></td>
+<td><p>EV charging from the main power</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_images/charging_overtemp.png"><img alt="green2" src="_images/charging_overtemp.png" style="height: 250px;" /></a></p></td>
+<td><p>Overheating</p></td>
+<td><p>Overheating, EV charge current limited</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/err_sta_0x10.png"><img alt="green3" src="_images/err_sta_0x10.png" style="height: 250px;" /></a></p></td>
+<td><p>Overcurrent</p></td>
+<td><p>Current above the set value (&lt;10%) but under maximum limit.</p>
+<p>EV charging continue.</p>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="button-red">
 <h2>Button red<a class="headerlink" href="#button-red" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 33%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Color</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/err_0x60.png"><img alt="red1" src="_images/err_0x60.png" style="height: 250px;" /></a></p></td>
+<td><p>Overheat</p></td>
+<td><p>Temperature above limit, waiting for cooling</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_images/err_0x81_0x82.png"><img alt="red2" src="_images/err_0x81_0x82.png" style="height: 250px;" /></a></p></td>
+<td><p>EV error</p></td>
+<td><p>EV not recognized, charging not available</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/err_0x88.png"><img alt="red3" src="_images/err_0x88.png" style="height: 250px;" /></a></p></td>
+<td><p>Overcurrent</p></td>
+<td><p>Current above the set value (&gt;10%) or above maximum limit.</p>
+<p>EV charging stops.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_images/err_0x86.png"><img alt="red4" src="_images/err_0x86.png" style="height: 250px;" /></a></p></td>
+<td><p>Current leakage</p></td>
+<td><p>Current leakage, charging not allowed for safety reasons</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/err_0x87.png"><img alt="red5" src="_images/err_0x87.png" style="height: 250px;" /></a></p></td>
+<td><p>Relay stucking</p></td>
+<td><p>Relay unable to open</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>disconnect EV and avoid usage. Further intervention required.</p>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_images/err_0x50.png"><img alt="red6" src="_images/err_0x50.png" style="height: 250px;" /></a></p></td>
+<td><p>Voltage error</p></td>
+<td><p>Voltage drop too high, wires too thin</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/err_0x50_0x51.png"><img alt="red7" src="_images/err_0x50_0x51.png" style="height: 250px;" /></a></p></td>
+<td><p>RCD test error</p></td>
+<td><p>RCD test failed</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_images/err_0x89.png"><img alt="red8" src="_images/err_0x89.png" style="height: 250px;" /></a></p></td>
+<td><p>Overvoltage</p></td>
+<td><p>Voltage above maximum limit</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/err_gen_0x10.png"><img alt="red9" src="_images/err_gen_0x10.png" style="height: 250px;" /></a></p></td>
+<td><p>Internal error</p></td>
+<td><p>EEPROM error</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="button-yellow">
 <h2>Button yellow<a class="headerlink" href="#button-yellow" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 33%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Color</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/solar_charge.png"><img alt="yellow1" src="_images/solar_charge.png" style="height: 250px;" /></a></p></td>
+<td><p>Solar charging</p></td>
+<td><p>Charging with some power coming from PV panels.</p>
+<p>The yellow leds indicate the amount of power coming from solar, each led corresponds to 20% of the total power</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In this figure the amount of power coming from solar is 60% (3 yellow leds)</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="button-purple">
 <h2>Button purple<a class="headerlink" href="#button-purple" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 33%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Color</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/update.png"><img alt="purple1" src="_images/update.png" style="height: 250px;" /></a></p></td>
+<td><p>Update</p></td>
+<td><p>Update in progress.</p>
+<p>Device will reset when updating is completed</p>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="button-light-blue">
 <h2>Button light blue<a class="headerlink" href="#button-light-blue" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 33%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Color</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/standby.png"><img alt="ligh_blue1" src="_images/standby.png" style="height: 250px;" /></a></p></td>
+<td><p>Standby</p></td>
+<td><p>Prism in standby, ready for charging</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="others">
+<h2>Others<a class="headerlink" href="#others" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 33%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Color</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/no_internet.png"><img alt="other1" src="_images/no_internet.png" style="height: 250px;" /></a></p></td>
+<td><p>No internet</p></td>
+<td><p>No internet connection. User input available only from front panel</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>only last led is purple, the other leds behave normally</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 

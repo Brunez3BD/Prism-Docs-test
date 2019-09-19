@@ -17,11 +17,11 @@ Top view
    :widths: 10, 20, 20
    
    **Number**, **Description**, **Part Number**
-   1, `Micro USB`_,
-   2, SD_,
-   3, Contactor_, Wurt Elektronik - 662008113322
-   4, `Power input`_, Wurt Elektronik - 662004113322
-   5, `Current sensors`_, JST - PHR-6
+   1, `Micro USB <1. Micro USB_>`_,
+   2, `SD <2. SD_>`_,
+   3, `Contactor <3. Contactor_>`_, Wurt Elektronik - 662008113322
+   4, `Power input <4. Power input_>`_, Wurt Elektronik - 662004113322
+   5, `Current sensors <5. Current sensors_>`_, JST - PHR-6
 
 Bottom view
 ===========
@@ -34,11 +34,11 @@ Bottom view
    :widths: 10, 20, 20
    
    **Number**, **Description**, **Part Number**
-   6, `Ethernet`_, 
-   7, AUX_, JST - PHR-10
-   8, AUX2_, JST - PHR-3
-   9, `RCD`_, JST - PHR-4
-   10, `I2C`_, JST - PHR-5
+   6, `Ethernet <6. Ethernet_>`_, 
+   7, `AUX <7. AUX_>`_, JST - PHR-10
+   8, `AUX2 <8. AUX2_>`_, JST - PHR-3
+   9, `RCD <9. RCD_>`_, JST - PHR-4
+   10, `I2C <10. I2C_>`_, JST - PHR-5
 
 Front view
 ==========
@@ -51,24 +51,26 @@ Front view
    :widths: 10, 20, 20
    
    **Number**, **Description**, **Part Number**
-   11, `Front Panel`_, JST - PHR-5
+   11, `Front Panel <11. Front Panel_>`_, JST - PHR-5
 
 Connectors
 ==========
 
-Micro USB
----------
+1. Micro USB
+------------
 Useful for USB host device
 
 .. warning:: Max 250 mA
 
 
-SD
---
+2. SD
+-----
 Micro SD slot to expand storage space 
 
-Contactor
----------
+3. Contactor
+------------
+
+Connect to contactors control input and relays outputs to verify their opening/closing.
 
 .. figure:: _img/pinout/contactor_connector.jpg
     :align: center
@@ -87,8 +89,10 @@ Contactor
    7,
    8,
 
-Power input
------------
+4. Power input
+--------------
+
+Connects to neutral and all phases available (1 or 3).
 
 .. figure:: _img/pinout/pwr_connector.jpg
     :align: center
@@ -103,8 +107,11 @@ Power input
    3, N, Neutral
    4, L1, First phase
 
-Current sensors
----------------
+5. Current sensors
+------------------
+
+Connects to the TA current sensor(s).
+
 .. figure:: _img/pinout/curr_sensor_connector.png
     :align: center
     :height: 150px
@@ -120,12 +127,14 @@ Current sensors
    5, C_P, Phase C TA input 1
    6, C_N, Phase C TA input 2
 
-Ethernet
---------
-TODO little description
+6. Ethernet
+-----------
 
-AUX
----
+Needed for internet connection where WiFi is not available.
+
+7. AUX
+------
+
 .. figure:: _img/pinout/aux_connector.png
     :align: center
     :height: 150px
@@ -145,8 +154,9 @@ AUX
    9,
    10,
 
-AUX2
-----
+8. AUX2
+-------
+
 .. figure:: _img/pinout/aux2_connector.png
     :align: center
     :height: 150px
@@ -159,8 +169,11 @@ AUX2
    2, LEDOUT, "Programmable digital output, internally pulled up" 
    3, GND, Ground
 
-RCD
----
+9. RCD
+------
+
+Connects to an RCM14-03 residual current monitor.
+
 .. figure:: _img/pinout/rcd_connector.png
     :align: center
     :height: 150px
@@ -174,8 +187,11 @@ RCD
    3, TEST, RCD test output
    4, RCD_FAULT, RCD fault input
 
-I2C
----
+10. I2C
+-------
+
+I2C bus for communications
+
 .. figure:: _img/pinout/5x1_connector.png
     :align: center
     :height: 150px
@@ -190,8 +206,11 @@ I2C
    4, 3V3, "3.3V"
    5, GND, Ground
 
-Front Panel
------------
+11. Front Panel
+---------------
+
+Connects to front panel for light effects and user input.
+
 .. figure:: _img/pinout/5x1_connector.png
     :align: center
     :height: 150px
